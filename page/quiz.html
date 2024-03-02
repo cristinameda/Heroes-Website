@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Quiz</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="../style/style.css">
+	<meta name="keywords" content="Heroes TV show Titu Meda Cristina MM01 project">
+	<meta name="author" lang="en" content="Titu Meda Cristina">
+	<meta name="Description"
+		content="Website dedicated to the Heroes series. Project for Multimedia class.">
+    <script src="https://kit.fontawesome.com/f065fe93bd.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/icon/favicon-32x32.png">
+</head>
+
+<body>
+
+    <!-- logo -->
+    <header>
+        <img src="../img/Heroes-logo.jpg" alt="Heroes TV show logo" title="Heroes TV show logo">
+    </header>
+
+    <!-- navigation -->
+    <div class="navbar">
+        <div class="toggle-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">About Us</a>
+                    <div class="dropdown-content">
+                    <a href="./about us/contact.html">Contact</a>
+                    <a href="./about us/credits.html">Credits</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Characters</a>
+                    <div class="dropdown-content">
+                    <a href="./characters/protagonists.html">Protagonists</a>
+                    <a href="./characters/antagonists.html">Antagonists</a>
+                    </div>
+                </li>
+                <li><a href="./seasons.html">Seasons</a></li>
+                <li><a href="./superpowers.html">Superpowers</a></li>
+                <li><a href="./directors.html">Directors</a></li>
+                <li><a href="./production.html">Production</a></li>
+                <li><a href="./quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="burger-menu">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./about us/contact.html">About Us: Contact</a></li>
+            <li><a href="./about us/credits.html">About Us: Credits</a></li>
+            <li><a href="./characters/protagonists.html">Characters: Protagonists</a></li>
+            <li><a href="./characters/antagonists.html">Characters: Antagonists</a></li>
+            <li><a href="./seasons.html">Seasons</a></li>
+            <li><a href="./superpowers.html">Superpowers</a></li>
+            <li><a href="./directors.html">Directors</a></li>
+            <li><a href="./production.html">Production</a></li>
+            <li><a href="./quiz.html">Quiz</a></li>
+        </ul>
+    </div>
+
+    <!-- conteneur de formulaire -->
+    <div id="main">
+        <!-- image d'en-tête -->
+        <div id="header"></div>
+
+        <!-- formulaire de quiz -->
+        <form id="form1">
+            <h1>BASIC QUIZ</h1>
+
+            <h2>1. Which member of Niki's family didn't have a power?</h2>
+            <label for="var_niki"><input type="radio" name="q1" value="0" id="var_niki" />Niki</label>
+            <label for="var_dl"><input type="radio" name="q1" value="0" id="var_dl" />D.L.</label>
+            <label for="var_micah"><input type="radio" name="q1" value="0" id="var_micah" />Micah</label>
+            <label for="var_none"><input type="radio" name="q1" value="10" id="v" />None of the above</label>
+
+            <h2>2. Which of these characters died in the explosion five years ago?</h2>
+            <label for="var_isaac"><input type="radio" name="q2" value="0" id="var_isaac" />Isaac</label>
+            <label for="sub_claire"><input type="radio" name="q2" value="0" id="var_claire" />Claire</label>
+            <label for="sub_info"><input type="radio" name="q2" value="10" id="var_ando" />Ando</label>
+            <label for="sub_condition"><input type="radio" name="q2" value="0" id="var_hiro" />Hiro</label>
+
+            <h2>3. Episode 2: "Don't Look Back". On what day is the bomb expected to destroy New York City?</h2>
+            <label for="var_nov8"><input type="radio" name="q3" value="10" id="var_nov8" />November 8</label>
+            <label for="var_march20"><input type="radio" name="q3" value="0" id="var_march20" />March 20</label>
+            <label for="var_oct14"><input type="radio" name="q3" value="0" id="var_oct14" />October 14</label>
+            <label for="var_feb5"><input type="radio" name="q3" value="0" id="var_feb5" />February 5</label>
+
+            <h2>4. Episode 9: "Homecoming" What does Nathan do (or try to do) with the painting he acquired from Mr. Linderman?</h2>
+            <label for="var_splash"><input type="radio" name="q4" value="10" id="var_splash" />He splashes it with paint and leaves</label>
+            <label for="var_matches"><input type="radio" name="q4" value="0" id="var_matches" />He matches it up with Isaac's othr paintings, realizes the truth, and informs Peter</label>
+            <label for="var_cry"><input type="radio" name="q4" value="0" id="var_cry" />He cries over it, having seen the horrible fate of his younger brother</label>
+            <label for="var_fire"><input type="radio" name="q4" value="0" id="var_fire" />He attempts to set it on fire, only to be stopped by Simone</label>
+
+            <h2>5. Episode 15: "Run!". How much money does Nathan give Meredith in order to keep her quiet about their daughter, in order to protect his image just weeks before the election?</h2>
+            <label for="var_100"><input type="radio" name="q5" value="10" id="var_100" />$100,000</label>
+            <label for="var_25"><input type="radio" name="q5" value="0" id="var_25" />$25,000</label>
+            <label for="var_10"><input type="radio" name="q5" value="0" id="var_10" />$10,000</label>
+            <label for="var_50"><input type="radio" name="q5" value="0" id="var_50" />$50,000</label>
+
+            <h2>6. Where did Sylas cut Ando?</h2>
+            <label for="var_forehead"><input type="radio" name="q6" value="0" id="var_forehead" />Forhead</label>
+            <label for="var_hands"><input type="radio" name="q6" value="0" id="var_hands" />Hands</label>
+            <label for="var_neck"><input type="radio" name="q6" value="10" id="var_neck" />Neck</label>
+            <label for="var_chest"><input type="radio" name="q6" value="0" id="var_chest" />Chest</label>
+
+            <h2>7. Which hero has the power of enhanced memory and learning ability?</h2>
+            <label for="var_charlie"><input type="radio" name="q7" value="10" id="var_charlie" />Charlie</label>
+            <label for="var_hiro"><input type="radio" name="q7" value="0" id="var_hiro" />Hiro</label>
+            <label for="var_eden"><input type="radio" name="q7" value="0" id="var_eden" />Eden</label>
+            <label for="var_claire"><input type="radio" name="q7" value="0" id="var_claire" />Claire</label>
+
+
+            <h2>8. In episode 12 Hiro discovered his "sacred object", which he believed would help him control his powers. What was the object?</h2>
+            <label for="var_locket"><input type="radio" name="q8" value="0" id="var_locket" />Charlie's locket</label>
+            <label for="var_sword"><input type="radio" name="q8" value="10" id="var_sword" />A Samurai sword</label>
+            <label for="var_rabbit"><input type="radio" name="q8" value="0" id="var_rabbit" />Lucky rabbit's foot</label>
+            <label for="var_ship"><input type="radio" name="q8" value="0" id="var_ship" />Keys to a "space ship"</label>
+
+            <h2>9. Nathan officially revealed his ability to fly in the fifth episode when he leapt into the air and disappeared from the sight of two other characters during what circumstance?</h2>
+            <label for="var_par"><input type="radio" name="q9" value="0" id="var_par" />His airplane was crashing and he leaped out without a parachute</label>
+            <label for="var_gun"><input type="radio" name="q9" value="10" id="var_gun" />Noah Bennett and the Haitian were kidnapping him at gunpoint</label>
+            <label for="var_fall"><input type="radio" name="q9" value="0" id="var_fall" />He was falling off of a building and instead flew away</label>
+            <label for="var_confirm"><input type="radio" name="q9" value="0" id="var_confirm" />He finally confirms to Peter that they both have powers, and wants to show off his own</label>
+
+            <h2>10. Episode 5: "Hiros". How is Nathan able to get away from Mr. Bennet and The Haitian?</h2>
+            <label for="var_car"><input type="radio" name="q10" value="0" id="var_car" />A campaign car arrives in time to allow his escape</label>
+            <label for="var_elbow"><input type="radio" name="q10" value="0" id="var_elbow" />He elbows Mr. Bennett, steals his gun, and runs off</label>
+            <label for="var_teleport"><input type="radio" name="q10" value="0" id="var_teleport" />He teleports back to New York City</label>
+            <label for="var_fly"><input type="radio" name="q10" value="10" id="var_fly" />He flies away</label>
+
+            <!-- bouton de soumission des réponses -->
+            <div class="container-button">
+                <button class="button-submit" role="submit" value="Submit">SUBMIT</button>
+            </div>
+
+        </form>
+
+        <!-- résultat du quiz -->
+        <p style="color: #bfba9f; font-weight: bold;">Your grade is: <span id="grade">__</span></p>
+        <p style="color: #bfba9f; font-weight: bold;" id="grade2"></p>
+    </div>
+
+    <script src="../script/quiz.js"></script>
+    <script src="../script/burger-menu.js"></script>
+
+    <!-- footer -->
+    <footer>
+        <p><a href="mailto:meda_cristina.titu@utt.fr">Titu Meda Cristina</a> ©2024 - All rights reserved</p>
+    </footer>
+
+</body>
+
+</html>

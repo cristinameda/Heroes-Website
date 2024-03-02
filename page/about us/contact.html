@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Contact</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="../../style/style.css">
+	<meta name="keywords" content="Heroes TV show Titu Meda Cristina MM01 project">
+	<meta name="author" lang="en" content="Titu Meda Cristina">
+	<meta name="Description"
+		content="Website dedicated to the Heroes series. Project for Multimedia class.">
+	<script src="https://kit.fontawesome.com/f065fe93bd.js" crossorigin="anonymous"></script>
+	<link rel="icon" type="image/png" sizes="32x32" href="../../img/icon/favicon-32x32.png">
+</head>
+
+<body>
+
+	<!-- logo -->
+	<header>
+		<img src="../../img/Heroes-logo.jpg" alt="Heroes TV show logo" title="Heroes TV show logo">
+	</header>
+
+	<!-- navigation -->
+	<div class="navbar">
+        <div class="toggle-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+		<nav>
+			<ul>
+				<li><a href="../../index.html">Home</a></li>
+				<li class="dropdown">
+					<a href="javascript:void(0)" class="dropbtn">About Us</a>
+					<div class="dropdown-content">
+					<a href="./contact.html">Contact</a>
+					<a href="./credits.html">Credits</a>
+					</div>
+				</li>
+				<li class="dropdown">
+					<a href="javascript:void(0)" class="dropbtn">Characters</a>
+					<div class="dropdown-content">
+					<a href="../characters/protagonists.html">Protagonists</a>
+					<a href="../characters/antagonists.html">Antagonists</a>
+					</div>
+				</li>
+				<li><a href="../seasons.html">Seasons</a></li>
+				<li><a href="../superpowers.html">Superpowers</a></li>
+				<li><a href="../directors.html">Directors</a></li>
+				<li><a href="../production.html">Production</a></li>
+				<li><a href="../quiz.html">Quiz</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<div class="burger-menu">
+        <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="./contact.html">About Us: Contact</a></li>
+            <li><a href="./credits.html">About Us: Credits</a></li>
+            <li><a href="../characters/protagonists.html">Characters: Protagonists</a></li>
+            <li><a href="../characters/antagonists.html">Characters: Antagonists</a></li>
+            <li><a href="../seasons.html">Seasons</a></li>
+            <li><a href="../superpowers.html">Superpowers</a></li>
+            <li><a href="../directors.html">Directors</a></li>
+            <li><a href="../production.html">Production</a></li>
+            <li><a href="../quiz.html">Quiz</a></li>
+        </ul>
+    </div>
+
+	<!-- formulaire de contact -->
+	<div class="contact-form">
+		<h1 class="title">CONTACT US</h1>
+		<form action="mailto:meda_cristina.titu@utt.fr" method="post" enctype="text/plain">
+		  <label for="name">NAME</label>
+		  <input type="text" id="name" name="name" required>
+	
+		  <label for="email">EMAIL</label>
+		  <input type="email" id="email" name="email" required>
+	
+		  <label for="message">MESSAGE</label>
+		  <textarea id="message" name="message" rows="4" required></textarea>
+		  
+		  <!-- bouton d'envoi pour envoyer les données par courrier électronique -->
+		  <button class="button-submit" type="submit" value="Send">SEND</button>
+		</form>
+	</div>
+
+	<!-- footer -->
+	<footer>
+        <p><a href="mailto:meda_cristina.titu@utt.fr">Titu Meda Cristina</a> ©2024 - All rights reserved</p>
+	</footer>
+
+	<script src="../../script/burger-menu.js"></script>
+
+</body>
+
+</html>

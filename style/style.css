@@ -1,0 +1,1440 @@
+@charset "utf-8";
+
+/* police */
+@font-face {
+    font-family: 'bebas_regular';
+    src: url('../font/bebas-regular-webfont.eot');
+    src: url('../font/bebas-regular-webfont.eot') format('embedded-opentype'),
+         url('../font/bebas-regular-webfont.woff') format('woff'),
+         url('../font/bebas-regular-webfont.ttf') format('truetype'),
+         url('../font/bebas-regular-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'louis_george_cafebold';
+    src: url('../font/louis_george_cafe_bold-webfont.eot');
+    src: url('../font/louis_george_cafe_bold-webfont.eot') format('embedded-opentype'),
+         url('../font/louis_george_cafe_bold-webfont.woff') format('woff'),
+         url('../font/louis_george_cafe_bold-webfont.ttf') format('truetype'),
+         url('../font/louis_george_cafe_bold-webfont.svgb') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'louis_george_cafeitalic';
+    src: url('../font/louis_george_cafe_italic-webfont.eot');
+    src: url('../font/louis_george_cafe_italic-webfont.eot') format('embedded-opentype'),
+         url('../font/louis_george_cafe_italic-webfont.woff') format('woff'),
+         url('../font/louis_george_cafe_italic-webfont.ttf') format('truetype'),
+         url('../font/louis_george_cafe_italic-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'louis_george_cafe_lightitalic';
+    src: url('../font/louis_george_cafe_light_italic-webfont.eot');
+    src: url('../font/louis_george_cafe_light_italic-webfont.eot') format('embedded-opentype'),
+         url('../font/louis_george_cafe_light_italic-webfont.woff') format('woff'),
+         url('../font/louis_george_cafe_light_italic-webfont.ttf') format('truetype'),
+         url('../font/louis_george_cafe_light_italic-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'louis_george_cafe_lightRg';
+    src: url('../font/louis_george_cafe_light-webfont.eot');
+    src: url('../font/louis_george_cafe_light-webfont.eot') format('embedded-opentype'),
+         url('../font/louis_george_cafe_light-webfont.woff') format('woff'),
+         url('../font/louis_george_cafe_light-webfont.ttf') format('truetype'),
+         url('../font/louis_george_cafe_light-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'louis_george_caferegular';
+    src: url('../font/louis_george_cafe-webfont.eot');
+    src: url('../font/louis_george_cafe-webfont.eot') format('embedded-opentype'),
+         url('../font/louis_george_cafe-webfont.woff') format('woff'),
+         url('../font/louis_george_cafe-webfont.ttf') format('truetype'),
+         url('../font/louis_george_cafe-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'louis_george_cafebold_italic';
+    src: url('../font/louis_george_cafe_bold_italic-webfont.eot');
+    src: url('../font/louis_george_cafe_bold_italic-webfont.eot') format('embedded-opentype'),
+         url('../font/louis_george_cafe_bold_italic-webfont.woff') format('woff'),
+         url('../font/louis_george_cafe_bold_italic-webfont.ttf') format('truetype'),
+         url('../font/louis_george_cafe_bold_italic-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 1280px;
+    margin: 0 auto;
+    background: linear-gradient(to top, white 1%, gray 11%, black 51%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'louis_george_caferegular';
+    font-size: 1em;
+    color: #F2F2F2;
+}
+
+/* page titre */
+.title {
+    font-family: 'bebas_regular';
+    text-align: center;
+    letter-spacing: 20px;
+}
+
+h1 {
+    font-family: 'louis_george_cafebold';
+    font-size: 3em;
+    letter-spacing: 5px;
+    color: #F2F2F2;
+    padding: 60px;
+}
+
+h2 {
+    font-family: 'louis_george_cafebold';
+    font-size: 2em;
+    color: #F2F2F2;
+}
+
+p a {
+    color: #D9D2BF;
+    text-decoration: none;
+    text-shadow: none
+}
+
+p a:hover {
+    text-shadow: #D9D2BF 1px 0 10px;
+}
+
+p a:visited {
+    color: #BFBA9F;
+}
+
+header img {
+    display: block;
+    margin: auto;
+    width: 60%;
+}
+
+/* navigation */
+nav {
+    font-size: 1.2em;
+}
+
+nav ul {
+    list-style-type: none; /* no bullets */
+    overflow: hidden;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    background-color: transparent 100%;
+}
+
+nav li a, .dropbtn {
+    display: inline-block;
+    position: relative;
+    width: fit-content;
+    color: #F2F2F2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* animation de soulignement de rayon de lumière */
+nav li a::before, .dropbtn::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: linear-gradient(to left, transparent 0%, #faf4e3 20%, #faf4e3 80%, transparent 100%);
+    transition: width 0.3s ease;
+}
+
+nav li a:hover::before, .dropbtn:hover::before {
+    width: 80%;
+}
+  
+nav li.dropdown {
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    border-radius: 20px;
+    opacity: 0.9;
+    min-width: 120px;
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: #F2F2F2;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* burger menu */
+.toggle-btn {
+    color: #F2F2F2;
+    cursor: pointer;
+    font-size: 2em;
+    margin-right: 40px;
+    display: none;
+    position: relative;
+}
+
+.burger-menu {
+    position: absolute;
+    display: none;
+    right: 2rem;
+    z-index: 2;
+    width: 300px;
+    top: 60;
+    background-color: black;
+    opacity: 0.9;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.burger-menu ul {
+    list-style-type: none;
+}
+
+.burger-menu li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F2F2F2;
+    border-radius: 20px;
+}
+
+.burger-menu a {
+    color: #F2F2F2;
+    display: block;
+    width: 90%;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.burger-menu a:hover {
+    background-color: #3e3e40;
+}
+
+.burger-menu.open {
+    display: block;
+    animation: fadeIn 0.3s ease-out;
+}
+
+/* le tableau de la page "Superpowers" */
+table, th, td {
+    border: 1px solid #3e3e40;
+    border-collapse: collapse;
+    color:#F2F2F2;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 500px;
+}
+
+th {
+    font-family: 'bebas_regular';
+    letter-spacing: 10px;
+    font-size: 1.5em;
+}
+
+td {
+    font-size: 1em;
+}
+  
+table.center {
+    width: 80%;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+/* la timeline de la page "Seasons" */
+/* la règle verticale */
+.timeline {
+    position: relative;
+    max-width: 1280px;
+    margin: 0 auto 200px auto;
+}
+  
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #F2F2F2;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+  
+/* le conteneur pour une saison */
+.container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+/* les cercles sur la timeline */
+.container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: #F2F2F2;
+    border: 4px solid #3e3e40;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+  
+/* placez le conteneur à gauche */
+.left {
+    left: 0;
+}
+  
+/* placez le conteneur à droite */
+.right {
+    left: 50%;
+}
+  
+/* ajouter des flèches au conteneur de gauche (pointant vers la droite) */
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid #F2F2F2;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #F2F2F2;
+}
+  
+/* ajouter des flèches au conteneur de droite (pointant vers la gauche) */
+.right::before {
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 22px;
+    z-index: 1;
+    left: 30px;
+    border: medium solid #F2F2F2;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #F2F2F2 transparent transparent;
+}
+  
+/* fixer le cercle pour les conteneurs sur le côté droit */
+.right::after {
+    left: -16px;
+}
+  
+/* le contenu */
+.content {
+    padding: 20px 30px;
+    background-color: #F2F2F2;
+    position: relative;
+    border-radius: 6px;
+}
+
+.content h2 {
+    color: #3e3e40;
+    font-size: 1.5em;
+    padding: 0;
+    padding-bottom: 20px;
+}
+
+/* saison bande-annonce conteneur */
+.season {
+    width: 100%;
+}
+
+.season iframe {
+    width: 100%;
+    height: 300px;
+}
+
+/* conteneur de personne = conteneur d'image + conteneur de description */
+/* utilisé dans les pages "Crédits" et "Réalisateurs */
+.person-container {
+    width: 100%;
+    margin-bottom: 150px;
+}
+
+/* image */
+.container-img {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    width: 30%;
+}
+
+/* rayon de lumière vertical séparant l'image et la description */
+.container-img::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    top: 0;
+    bottom: 0;
+    background: radial-gradient(closest-side, #faf4e3 0, #faf4e3 30%, transparent 100%)
+}
+
+.container-img img {
+    width: 100%;
+    padding: 20px 60px 20px 20px;
+}
+
+/* description de la personne */
+.container-text {
+    display: inline-block;
+    vertical-align: top;
+    width: 69%;
+    padding: 20px 20px 0px 60px;
+}
+
+.container-text h2 {
+    padding: 0px;
+    padding-bottom: 20px;
+}
+
+.container-text p {
+    text-align: justify;
+}
+
+/* "Production" page */
+/* menu */
+.menu {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.menu ul {
+    list-style-type: none; /* no bullets */
+    overflow: hidden;
+    text-align: center;
+}
+
+.menu li {
+    display: block;
+    padding: 20px;
+    text-align: center;
+}
+
+.menu li a {
+    font-family: 'louis_george_caferegular';
+    font-size: 2em;
+    text-align: center;
+    position: relative;
+    color: #F2F2F2;
+    text-decoration: none;
+    text-shadow: none
+}
+
+.menu li a:hover {
+    text-shadow: #D9D2BF 0px 0 15px;
+}
+
+/* audio */
+.audio {
+    padding: 0px 40px 40px 40px;
+}
+
+audio {
+    width: 100%;
+}
+
+/* bottom video */
+.video {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* center along the horizontal axis */
+    align-items: center; /* center along the vertical axis */
+    margin-bottom: 150px;
+    padding: 40px;
+}
+
+.video iframe {
+    width: 80%;
+    height: 400px;
+}
+
+/* conteneur de caractères = conteneur d'éclipse + conteneur de description de caractères */
+/* utilisé pour les pages "Protagonistes" et "Antagonistes" */
+.container-character {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* eclipse */
+.container-eclipse {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    padding: 40px;
+    margin: 0 auto;
+}
+
+.eclipse {
+    margin: 0 auto;
+    width: 100%; 
+    height: 100%;
+    background-color: black;
+    border-radius: 50%;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.8); /* set the shadow with fading effect */
+    animation: fadeShadow 2s infinite alternate; /* add animation for fading effect */
+    position: relative;
+}
+
+.eclipse img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+/* animation éclipse - ombre entrant et sortant */
+@keyframes fadeShadow {
+    0% {
+        box-shadow: 0 0 100px rgba(255, 255, 255, 0.8);
+    }
+    100% {
+        box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+    }
+}
+
+/* animation pour l'éclipse de la page d'accueil "Home" */
+.shadow {
+    box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+    transition: box-shadow 0.5s ease-in;
+}
+
+.shadow:hover {
+    box-shadow: 0 0 80px rgba(255, 255, 255, 0.8);
+    transition: box-shadow 0.5s ease-out;
+}
+
+.no-shadow {
+    box-shadow: none;
+}
+
+.no-animation {
+    animation: none;
+}
+
+.nodisplay {
+    display: none;
+}
+
+/* description de caractère */
+.container-description {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% - 305px);
+    padding: 40px;
+    text-align: justify;
+}
+
+.container-description h2 {
+    font-size: 2em;
+    padding-bottom: 20px;
+}
+
+.container-description p {
+    font-size: 1em;
+}
+
+/* "Quiz" page */
+#main {
+    width: 80%;
+    max-width: 1200px;
+    border: 2px black solid;
+    margin: 100px auto auto auto;
+    padding: 20px;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+}
+    
+#header {
+    margin-top: 0;
+    border: 2px solid black;
+    padding: 5px;
+    height: 500px;
+    background: url(../img/poster.jpg) center no-repeat;
+    background-size: cover;
+}
+
+#main form label {
+    display: block;
+    margin-bottom: 20px;
+    color: #3e3e40;
+}
+
+#main form input {
+    width: 30px;
+    margin-left: 20px;
+}
+
+#main form h1 {
+    font-family: 'bebas_regular';
+    letter-spacing: 20px;
+    text-align: center;
+    padding: 0;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: #3e3e40;
+}
+
+#main form h2 {
+    margin: 20px;
+    font-size: 1.5em;
+    color: #3e3e40;
+}
+
+/* bouton de soumission */
+.container-button {
+    display: block;
+    text-align: center;
+}
+
+.button-submit {
+    display: block;
+    background-color: black;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #f2f2f2;
+    letter-spacing: 5px;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-family: 'bebas_regular';
+    font-size: 1em;
+    font-weight: 500;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    transition: all .5s;
+    box-shadow: #808080 0 10px 50px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin: 20px auto;
+}
+
+/* animation du bouton de soumission */
+.button-submit:hover {
+    box-shadow: #d9d2bf 0 10px 50px;
+    background: radial-gradient(closest-side, #bfba9f 0, #d9d2bf 60%, transparent 100%);
+    color:black;
+    transition-duration: .3s;
+}
+
+#main p {
+    font-size: 1.5em;
+    margin-top: 20px;
+    padding: 0;
+    padding-left: 20px;
+}
+
+/* "Contact" page - formulaire de contact */
+.contact-form {
+    width: 60%;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #3e3e40 transparent 40%;
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.contact-form form {
+    margin: 50px auto;
+}
+
+/* animation dans laquelle le conteneur apparaît en fondu */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 0.9;
+    }
+}
+
+.contact-form h1 {
+    padding: 0;
+    margin: 50px auto;
+    color: #f4f4f4;
+    font-size: 2em;
+    letter-spacing: 20px;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: #f4f4f4;
+    font-family: 'bebas_regular';
+    letter-spacing: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #d9d2bf;
+    border-radius: 8px;
+    background-color: #3e3e40;
+    color: #fff;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    font-family: 'louis_george_caferegular';
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover {
+    box-shadow: #d9d2bf 0 1px 20px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    background-color: #d9d2bf;
+    color:black;
+    font-weight: bold;
+}
+
+/* "Credits" page - conteneur d'informations de contact */
+.contact {
+    width: 100%;
+    margin: 20px;
+}
+
+/* "Home" page */
+/* le container-home contient une éclipse */
+.container-home {
+    display: block;
+    width: 450px;
+    height: 450px;
+    margin: 50px;
+    text-align: center;
+    position: relative;
+}
+
+.center {
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* dans l'éclipse est un texte d'introduction */
+.eclipse-content {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    padding: 20px;
+    margin: 0;
+    position: relative;
+}
+
+.eclipse-content p {
+    height: 100%;
+    font-size: 1em;
+    line-height: 1.25;
+    padding: 0;
+    text-align: center;
+    text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.3);
+}
+
+/* tracer les coordonnées du polygone() et le faire flotter vers la gauche de façon à ce que le texte s'enroule dans le cercle */
+.eclipse-content::before {
+    content: "";
+    width: 50%;
+    height: 100%;
+    float: left;
+    shape-outside: polygon(
+      0 0,
+      98% 0,
+      50% 6%,
+      23.4% 17.3%,
+      6% 32.6%,
+      0 50%,
+      6% 65.6%,
+      23.4% 82.7%,
+      50% 94%,
+      98% 100%,
+      0 100%
+    );
+    shape-margin: 7%;
+}
+
+/* faire de même pour la partie droite */
+.eclipse-content p::before {
+    content: "";
+    width: 50%;
+    height: 100%;
+    float: right;
+    shape-outside: polygon(
+      2% 0%,
+      100% 0%,
+      100% 100%,
+      2% 100%,
+      50% 94%,
+      76.6% 82.7%,
+      94% 65.6%,
+      100% 50%,
+      94% 32.6%,
+      76.6% 17.3%,
+      50% 6%
+    );
+    shape-margin: 7%;
+}
+
+/* parallax effet */
+.parallax {
+    background-image: url("../img/home-img.jpg");
+    box-shadow: inset 0px 0px 30px 30px rgb(0,0,0,0.6);
+  
+    min-height: 400px; 
+    max-width: 1280px;
+  
+    /* créer l'effet de défilement parallaxe */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* le bloc séparant la parallaxe */
+div.parallax-div {
+    background-color: black;
+    min-height: 300px;
+}
+
+/* tv show quote à l'intérieur du bloc parallaxe */
+div.parallax-div blockquote p,
+div.parallax-div blockquote cite{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    transition: font-size 0.3s ease-in;
+    
+}
+
+/* animation pour les citations */
+div.parallax-div blockquote p:hover,
+div.parallax-div blockquote cite:hover {
+    font-size: 24px;
+    transition: font-size 0.3s ease-out;
+}
+
+/* footer */
+footer p {
+    text-align: center;
+    color: black;
+    font-size: 1em;
+    margin: 10px;
+}
+
+footer p a {
+    color: black;
+}
+
+footer p a:hover {
+    text-shadow: 0.5px 0.5px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* brekapoint où la navigation se transforme en burger menu */
+@media screen and (max-width: 900px ) {
+    .navbar nav {
+        display: none;
+    }
+
+    .navbar .toggle-btn {
+        display: flex;
+        margin-left: auto;
+        width: fit-content;
+    }
+
+    /* modifier les dimensions de l'éclipse et de la description pour mieux les adapter */
+    .container-eclipse {
+        width: 30vw;
+        height: 30vw;
+    }
+
+    .container-description {
+        width: calc(100% - 31vw);
+    }
+}
+  
+/* tablette */
+@media screen and (max-width: 768px ) {
+    /* ajustement du logo */
+    header img {
+        width: 80%;
+    }
+
+    /* ajustement du titre de la page */
+    h1.title {
+        font-size: 2.5em;
+        letter-spacing: 10px;
+        padding: 40px;
+    }
+
+    /* placer le timelime à gauche */
+    .timeline::after {
+        left: 31px;
+    }
+    
+    /* conteneurs pleine largeur */
+    .container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+    
+    /* s'assurer que toutes les flèches sont orientées vers la gauche */
+    .container::before {
+        left: 60px;
+        border: medium solid #F2F2F2;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent #F2F2F2 transparent transparent;
+    }
+  
+    /* s'assurer que tous les cercles sont au même endroit */
+    .left::after, .right::after {
+        left: 15px;
+    }
+    
+    /* faire en sorte que tous les conteneurs de droite se comportent comme ceux de gauche */
+    .right {
+        left: 0%;
+    }
+
+    /* ajuster les dimensions du tableau de la page "Superpouvoirs */
+    table.center {
+        width: 100%;
+    }
+
+    table, th, td {
+        padding: 10px;
+        margin-bottom: 150px;
+    }
+
+    th {
+        letter-spacing: 5px;
+        font-size: 0.8em;
+    }
+    
+    td {
+        font-size: 0.5em;
+    }
+
+    /* pour les pages "Credits" and "Directors" */
+    /* agrandir l'image et la centrer */
+    .container-img {
+        display: block;
+        width: 50%;
+    }
+
+    .container-img img {
+        padding: 0;
+        transform: translateX(50%);
+    }
+
+    /* transformer la ligne verticale en ligne horizontale */
+    .container-img::after {
+        top: 100%;
+        left: 50%;
+        width: 100%;
+        height: 10px;
+        margin-top: 50px;
+    }
+
+    /* déplacer la description sous l'image, après la ligne */
+    .container-text {
+        display: block;
+        width: 100%;
+        text-align: justify;
+        padding: 0px 20px 20px 20px;
+        margin-top: 50px;
+    }
+
+    .container-text h2 {
+        text-align: center;
+        padding: 50px 20px 20px 20px;
+    }
+
+    .container-text h3 {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .container-text p {
+        text-indent: 0;
+    }
+
+    /* ajustement de l'image d'en-tête de la page "Quiz" */
+    #header {
+        height: 275px;
+    }
+
+    /* ajustement du formulaire de la page "Contact" */
+    .contact-form {
+        width: 80%;
+    }
+
+    .contact-form h1 {
+        font-size: 1.8em;
+        letter-spacing: 15px;
+    }
+
+    /* page "Credits" - informations de contact ajustement du texte */
+    .contact {
+        margin: 20px 0;
+    }
+
+    .contact p {
+        text-align: center;
+    }
+
+    /* "Home" page - ajustements de la taille de la police du bloc de citation parallaxe */
+    div.parallax-div blockquote p,
+    div.parallax-div blockquote cite {
+        font-size: 14px;
+    }
+
+    div.parallax-div blockquote p:hover,
+    div.parallax-div blockquote cite:hover {
+        font-size: 18px;
+    }
+
+    .container-description {
+        padding: 20px;
+    }
+
+    .container-description h2 {
+        font-size: 1.5em;
+        padding-bottom: 20px;
+    }
+
+    /* page "Production" - réglage de la hauteur de la vidéo du bas */
+    .video iframe {
+        height: 250px;
+    }
+}
+
+/* petite tablette */
+@media screen and (max-width: 600px ) {
+    /* ajustement du logo */
+    header img {
+        width: 100%;
+    }
+
+    /* ajustement du titre de la page */
+    h1.title {
+        font-size: 2em;
+    }
+
+    /* ajustement du contenu de la timeline */
+    .content {
+        padding: 20px;
+    }
+
+    .content h2 {
+        font-size: 1.5em;
+    }
+
+    /* ajustement de la bande-annonce */
+    .season iframe {
+        height: 200px;
+    }
+
+    /* page "Production" - ajustement du texte du menu */
+    .menu li a {
+        font-size: 1.5em;
+    }
+
+    /* ajustement des dimensions de la page "Quiz" - réduction de la taille des conteneurs et du texte */
+    #header {
+        height: 200px;
+    }
+
+    #main form h1 {
+        font-size: 1.5em;
+        letter-spacing: 5px;
+        padding: 0;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    #main {
+        padding: 10px;
+    }
+    
+    #main form h2 {
+        font-size: 14px;
+        padding: 5px;
+        margin: 0;
+    }
+
+    #main form label {
+        font-size: 12px;
+        padding: 5px;
+        margin: 0;
+    }
+
+    #main form input {
+        margin: 0;
+        padding: 0;
+    }
+
+    #main p {
+        font-size: 1em;
+        padding: 0;
+        padding-left: 10px;
+    }
+
+    /* bouton de soumission - réduction de la taille de l'ajustement */
+    .button-submit {
+        width: 80px;
+        height: 80px;
+        letter-spacing: 2px;
+    }
+
+    /* page "Contact" - réduire la taille du formulaire */
+    .contact-form h1 {
+        font-size: 1.5em;
+        letter-spacing: 10px;
+        margin: 0 auto;
+    }
+
+    .contact-form form {
+        margin: 10px auto;
+    }
+
+    /* réduction du remplissage vidéo de la page "Production" */
+    .video {
+        padding: 10px;
+    }
+
+    /* ajustement de la page d'accueil "Home" */
+    /* réduire la taille de l'éclipse et du texte qu'elle contient */
+    .container-home {
+        width: 375px;
+        height: 375px;
+    }
+
+    .eclipse-content p {
+        font-size: 13px;
+    }
+
+    /* réduire la taille du texte de la citation */
+    div.parallax-div blockquote p,
+    div.parallax-div blockquote cite {
+        font-size: 12px;
+    }
+
+    div.parallax-div blockquote p:hover,
+    div.parallax-div blockquote cite:hover {
+        font-size: 16px;
+    }
+
+    /* les pages "Protagonists" and "Antagonists" */
+    /* déplacer l'éclipse au centre et l'agrandir */
+    .container-eclipse {
+        display: block;
+        width: 60vw;
+        height: 60vw;
+        margin: 0 auto;
+    }
+
+    .eclipse {
+        margin: 0 auto;
+    }
+
+    /* centrer le texte également sous l'éclipse avec le caractère de chat associé */
+    .container-description {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+
+    .container-description h2 {
+        margin: 0;
+        font-size: 2em;
+        text-align: center;
+    }
+    
+    /* utilisé afin d'avoir la photo du personnage en premier et ensuite la description en dessous. */
+    .bottom {
+        display: none;
+    }
+
+}
+
+/* mobile */
+@media screen and (max-width: 425px ) {
+    /* réduire la taille du texte du titre */
+    h1.title {
+        font-size: 1.5em;
+        padding: 20px 10px;
+    }
+
+    /* ajustement du contenu de la timeline de la page "Seasons" */
+    .content {
+        padding: 10px;
+    }
+
+    .content h2 {
+        font-size: 0.8em;
+        padding-bottom: 10px;
+    }
+
+    .season iframe {
+        height: 150px;
+    }
+
+    /* "Superpowers" ajustement du tableau */
+    th {
+        letter-spacing: 5px;
+        font-size: 10px;
+    }
+    
+    td {
+        font-size: 8px;
+    }
+
+    table, th, td {
+        padding: 5px;
+        margin-bottom: 150px;
+    }
+
+    /* les pages "Credits" and "Directors" - ajustement des dimensions de l'image et du texte */
+    .container-img {
+        width: 100%;
+    }
+
+    .container-img img {
+        width: 100%;
+        transform: none;
+    }
+
+    /* ligne horizontale */
+    .container-img::after {
+        top: 100%;
+        left: 0;
+    }
+
+    .container-text {
+        padding: 10px;
+    }
+
+    .container-text h2 {
+        font-size: 1.5em;
+    }
+
+    .container-text p {
+        font-size: 0.8em;
+    }
+
+    /* ajustement des dimensions de la page "Production" */
+    .menu li a {
+        font-size: 1.2em;
+    }
+
+    .audio {
+        padding: 0px 20px 0px 20px;
+    }
+
+    .video iframe {
+        width: 100%;
+    }
+
+    /* page "Quiz" - changer le quiz en pleine largeur et ajuster la taille du texte */
+    #main {
+        width: 100%;
+    }
+    
+    #main form h2 {
+        font-size: 12px;
+    }
+
+    #main form label {
+        font-size: 11px;
+    }
+
+    #main p {
+        font-size: 12px;
+    }
+
+    /* page "Contact" - modifier le formulaire en pleine largeur et ajuster la taille du texte */
+    .contact-form {
+        width: 100%;
+        border-radius: 0;
+        background-color: transparent 100%;
+        box-shadow: none;
+        margin: 0 auto;
+    }
+
+    .contact-form h1 {
+        font-size: 1.5em;
+        letter-spacing: 10px;
+        margin: 50px auto;
+    }
+
+    .contact-form form {
+        margin: 10px auto 50px auto;
+    }
+
+    /* réduire la taille du burger menu */
+    .burger-menu {
+        width: 200px;
+    }
+
+    .burger-menu a {
+        font-size: 12px;
+    }
+
+    /* ajustement de la page d'acceuil "Home" */
+    /* réduire la taille de l'éclipse et de son texte */
+    .container-home {
+        width: 325px;
+        height: 325px;
+    }
+
+    .container-home p {
+        font-size: 11px;
+    }
+
+    /* réduire la taille de la police des citations */
+    div.parallax-div blockquote p,
+    div.parallax-div blockquote cite {
+        font-size: 10px;
+    }
+
+    div.parallax-div blockquote p:hover,
+    div.parallax-div blockquote cite:hover {
+        font-size: 14px;
+    }
+
+    /* réduire la taille du pied de page */
+    footer p {
+        font-size: 12px;
+        margin: 10px;
+    }
+
+    /* ajustement des pages "Protagonists" and "Antagonists" */
+    /* agrandir l'éclipse */
+    .container-eclipse {
+        width: 80vw;
+        height: 80vw;
+    }
+
+    /* réduire la taille des caractères */
+    .container-description h2 {
+        font-size: 1em;
+    }
+
+    .container-description p {
+        font-size: 12px;
+    }
+}
+
+/* le plus petit mobile */
+@media screen and (max-width: 350px ) {
+    /* "Superpowers" ajustement du texte de la page */
+    th {
+        letter-spacing: 2px;
+    }
+
+    /* "Seasons" réglage de la hauteur des bandes annonces et du contenu */
+    .season iframe {
+        height: 100px;
+    }
+
+    .content {
+        padding: 5px;
+    }
+
+    /* page "Quiz" - image d'en-tête redimensionnée */
+    #header {
+        height: 150px;
+    }
+
+    /* ajustement "Home"- reduce eclipse size and content */
+    .container-home {
+        width: 280px;
+        height: 280px;
+    }
+
+    .eclipse-content {
+        padding: 10px;
+    }
+
+    .container-home p {
+        font-size: 10px;
+    }
+
+    /* "Production" réglage de la hauteur de la vidéo du bas */
+    .video iframe {
+        height: 200px;
+    }
+}
